@@ -1,0 +1,62 @@
+name: Altay
+description: 'Гостевой дом “АЛТАЙ”'
+author: Акмаль
+code: ''
+form:
+  fields:
+    site_name: 
+      label: Имя сайта
+      placeholder: Гостевой дом “АЛТАЙ”
+      size: small
+    phone1: 
+      label: телефон1
+      placeholder: 550 999 999
+    phone2: 
+      label: телефон2
+      placeholder: 707 999 999
+    phone3: 
+      label: телефон3
+      placeholder: 999 999 999
+    user_email:
+      label: Email адрес1
+      type: email
+      placeholder: info@altai.kg
+    user_email2:
+      label: Email адрес2
+      type: email
+      placeholder: dilya@altai.kg
+    info: 
+      label: Адрес
+      placeholder: Кыргызстан, г.Каракол, ул. К.Карасаева (Тельмана) 303
+    # logoHeader:
+    #   label: Логотип в шапке сайта 
+    #   type: fileupload
+    #   mode: image
+        
+    # logoFooter:
+    #   label: Логотип в подвале сайта
+    #   type: fileupload
+    #   mode: image
+    facebook: 
+      label: Ссылка на facebook
+      placeholder: https://www.facebook.com/profile/ 
+    vk: 
+      label: Ссылка на vk 
+      placeholder: https://vk.com/profile/ 
+    youtube: 
+      label: Ссылка на youtube 
+      placeholder: https://vk.com/profile/ 
+    youtube: 
+      label: Ссылка на youtube 
+      placeholder: https://www.youtube.com/channel/ 
+    instagram: 
+      label: Ссылка на instagram 
+      placeholder: https://www.youtube.com/channel/ 
+    google: 
+      label: Ссылка на google+ 
+    booking: 
+      label: Ссылка на booking 
+    tripadvisor: 
+      label: Ссылка на tripadvisor 
+      
+       

@@ -13,7 +13,7 @@ fields:
         type: fileupload
         mode: file
         fileTypes: zip
-
+        
     overwrite:
         label: cms::lang.theme.import_overwrite_label
         comment: cms::lang.theme.import_overwrite_comment

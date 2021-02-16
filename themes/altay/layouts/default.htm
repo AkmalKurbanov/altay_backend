@@ -1,0 +1,121 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>October CMS - {{ this.page.title }}</title>
+  <meta name="description" content="{{ this.page.meta_description }}">
+  <meta name="title" content="{{ this.page.meta_title }}">
+  <meta name="author" content="OctoberCMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="OctoberCMS">
+  <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">
+  <link href="{{ 'assets/css/vendor.min.css'|theme }}" rel="stylesheet">
+  <link href="{{ 'assets/css/main.css'|theme }}" rel="stylesheet">
+  {% styles %}
+  <script src="{{ 'assets/javascript/vendor/modernizr.js'|theme }}"></script>
+  {% scripts %}
+</head>
+
+<body>
+
+  <div class="flabLoader">
+    <div class="flabLoader__wrap">
+      <div id="loader-wrap" class="loader-wrap">
+        <div class="cssload-loader">
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+          <div class="cssload-side"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- flabLoader end -->
+
+  <nav class="flabMmnu">
+    <ul class="flabMobile">
+      <li class="flabMobile__item">
+        <a href="#" class="flabMobile__link">Главная</a>
+      </li>
+      <li class="flabMobile__item flabMobile__item--active">
+        <a href="#" class="flabMobile__link">О нас</a>
+      </li>
+      <li class="flabMobile__item">
+        <a href="#" class="flabMobile__link">Номера</a>
+      </li>
+      <li class="flabMobile__item flabMobile__item--submenu">
+        <a class="flabMobile__link">Услуги</a>
+        <ul class="flabSubmenu">
+          <li class="flabSubmenu__item">
+            <a class="flabSubmenu__link" href="#">Туры</a>
+          </li>
+          <li class="flabSubmenu__item">
+            <a class="flabSubmenu__link" href="#">Кухня</a>
+          </li>
+        </ul>
+      </li>
+      <li class="flabMobile__item flabMobile__item--submenu">
+        <a href="#" class="flabMobile__link">Галерея</a>
+        <ul class="flabSubmenu">
+          <li class="flabSubmenu__item">
+            <a class="flabSubmenu__link" href="#">Туры</a>
+          </li>
+          <li class="flabSubmenu__item">
+            <a class="flabSubmenu__link" href="#">Кухня</a>
+          </li>
+        </ul>
+      </li>
+      <li class="flabMobile__item">
+        <a href="#" class="flabMobile__link">Блог</a>
+      </li>
+      <li class="flabMobile__item">
+        <a href="#" class="flabMobile__link">Отзывы</a>
+      </li>
+      <li class="flabMobile__item">
+        <a href="#" class="flabMobile__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- flabMmnu end -->
+
+  <!-- Header -->
+
+
+  {% if  this.page.url == '/' %}
+
+  {% partial 'site/header' %}
+
+  {% else %}
+
+  {% partial 'site/header-default' %}
+
+  {% endif %}
+
+
+
+  <!-- Content -->
+  <section id="layout-content">
+    {% page %}
+  </section>
+
+  <!-- Footer -->
+
+  {% partial 'site/footer' %}
+
+
+  <!-- Scripts -->
+  <script src="{{ 'assets/javascript/vendor.min.js'|theme }}"></script>
+  <script src="{{ 'assets/javascript/main.js'|theme }}"></script>
+  {% framework extras %}
+  {% scripts %}
+
+</body>
+
+</html>

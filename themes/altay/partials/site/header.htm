@@ -1,0 +1,208 @@
+  <!-- flabMmnu end -->
+  <div class="flabHeader">
+    <ul class="flabSlideshow">
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_1.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_1.jpg');"></span>
+      </li>
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_2.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_2.jpg');"></span>
+      </li>
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_3.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_3.jpg');"></span>
+      </li>
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_1.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_1.jpg');"></span>
+      </li>
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_2.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_2.jpg');"></span>
+      </li>
+      <li>
+        <span class="flabLazy" data-original="images/originsize/header/main_room_3.jpg"
+          style="background-image: url('images/thumbsize/header/main_room_3.jpg');"></span>
+      </li>
+    </ul>
+    <div class="flabHamburger">
+      <span class="flabHamburger__item"></span>
+      <span class="flabHamburger__item"></span>
+      <span class="flabHamburger__item"></span>
+    </div>
+    <div class="flabHeader__topLine">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="flabHeader__lang">
+              <ul class="flabHeader__langLists">
+                <li class="flabHeader__langItem flabHeader__langItem--active">
+                  <a href="#" class="flabHeader__langLink">Рус</a>
+                </li>
+                <li class="flabHeader__langItem">
+                  <a href="#" class="flabHeader__langLink">Eng</a>
+                </li>
+                <li class="flabHeader__langItem">
+                  <a href="#" class="flabHeader__langLink">Deu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="flabHeader__phone">
+              <i class="flabIcon flabio-phone"></i>
+              
+              {% if this.theme.phone1 == true %}
+              
+              <a href="tel:+996 {{this.theme.phone1}}" class="flabHeader__phoneLink phone-display">+(996) {{this.theme.phone1}}</a>
+              
+              {% elseif  this.theme.phone1 == false %}
+
+              Номер телефона не найден
+              
+              {% else %}
+              
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flabHeader__nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-12">
+            <ul class="flabHeader__navLists flabNavigation">
+              <li class="flabNavigation__item flabNavigation__item--active">
+                <a href="#" class="flabNavigation__link">Главная</a>
+              </li>
+              <li class="flabNavigation__item">
+                <a href="#" class="flabNavigation__link">О нас</a>
+              </li>
+              <li class="flabNavigation__item">
+                <a href="#" class="flabNavigation__link">Номера</a>
+              </li>
+              <li class="flabNavigation__item flabNavigation__item--submenu">
+                <a href="#" class="flabNavigation__link">Услуги</a>
+                <ul class="flabSubmenu">
+                  <li class="flabSubmenu__item">
+                    <a class="flabSubmenu__link" href="#">Туры</a>
+                  </li>
+                  <li class="flabSubmenu__item">
+                    <a class="flabSubmenu__link" href="#">Кухня</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-12">
+            <div class="flabHeader__logo">
+              <a href="#" class="flabHeader__logoLink">
+                <img src="{{ 'assets/images/logo_ru.svg'|theme }}" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-12">
+            <ul class="flabHeader__navLists flabNavigation">
+              <li class="flabNavigation__item flabNavigation__item--submenu">
+                <a href="#" class="flabNavigation__link">Галерея</a>
+                <ul class="flabSubmenu">
+                  <li class="flabSubmenu__item">
+                    <a class="flabSubmenu__link" href="#">Туры</a>
+                  </li>
+                  <li class="flabSubmenu__item">
+                    <a class="flabSubmenu__link" href="#">Кухня</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="flabNavigation__item">
+                <a href="#" class="flabNavigation__link">Блог</a>
+              </li>
+              <li class="flabNavigation__item">
+                <a href="#" class="flabNavigation__link">Отзывы</a>
+              </li>
+              <li class="flabNavigation__item">
+                <a href="#" class="flabNavigation__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flabHeader__content">
+      <h2 class="flabHeader__contentHead">Гостевой дом
+        <br>
+        <span>“АЛТАЙ”</span>
+      </h2>
+      <p class="flabHeader__contentDescr">Уголок европейского комфорта
+        <br>в этностиле</p>
+    </div>
+    <div class="flabHeader__form">
+      <div class="container">
+        <div class="flabHeader__wrap flabForm">
+          <div class="row">
+            <div class="col-xl-11">
+              <div class="flabForm__bg input-daterange">
+                <h3 class="flabForm__subtitle">Бронирование</h3>
+                <div class="row">
+                  <div class="col-lg-6 col-xl-3">
+                    <div class="flabForm__inwrap">
+                      <p class="flabForm__descr">Дата прибытия</p>
+                      <div class="flabForm__group">
+                        <input type="text" id="start" class="flabRange" name="start">
+                        <i class="flabIcon flabio-calendar"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-3">
+                    <div class="flabForm__inwrap">
+                      <p class="flabForm__descr">Дата отбытия</p>
+                      <div class="flabForm__group">
+                        <input type="text" id="end" class="flabRange" name="end" disabled>
+                        <i class="flabIcon flabio-calendar"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-3">
+                    <div class="flabForm__inwrap">
+                      <p class="flabForm__descr">Тип номера</p>
+                      <select class="flabSelect" name="select">
+                        <option data-data='{"openPrice": 1000}' value="1">Эконом</option>
+                        <option data-data='{"openPrice": 1000}' value="2">Полулюкс</option>
+                        <option data-data='{"openPrice": 1000}' value="3">Люкс</option>
+                        <option data-data='{"openPrice": 1000}' value="4">Кровать</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-3">
+                    <div class="flabForm__inwrap">
+                      <p class="flabForm__descr flabDays">
+                        <span>1</span> ночь</p>
+                      <select id='people' class="flabSelect" name="select">
+                        <option value="1">1 Человек</option>
+                        <option value="2">2 Человека</option>
+                        <option value="3">3 Человека</option>
+                        <option value="4">4 Человека</option>
+                        <option value="5">5 Человек</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-1">
+              <div class="flabForm__btnwrap">
+                <a href="#booking" class="flabForm__button flabOpenModal" data-text="Бронировать">
+                  <span>Бронировать</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- flabForm end -->
+      </div>
+    </div>
+  </div>
+  <!-- flabHeader end -->
